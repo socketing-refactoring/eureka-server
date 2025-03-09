@@ -45,5 +45,5 @@ tasks.jar {
 }
 
 tasks.bootJar {
-	archiveBaseName.set("eureka-server")
+	archiveFileName.set("eureka-server.jar")
 }
