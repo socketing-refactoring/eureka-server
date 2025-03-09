@@ -4,7 +4,7 @@ spring:
       eureka-server
 
   profiles:
-    active: dev, local
+    active: dev
 
 server:
   port:
