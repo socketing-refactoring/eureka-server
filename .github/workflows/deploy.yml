@@ -76,5 +76,6 @@ jobs:
             cd eureka-server/app
             docker compose -f docker-compose.app.yml down
             docker system prune -a -f
+            echo "DOCKER_USERNAME=${{ secrets.DOCKER_USERNAME }}" > .env
             echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
             docker compose -f docker-compose.app.yml up -d --build
