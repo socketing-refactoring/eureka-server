@@ -1,10 +1,10 @@
 spring:
   application:
     name:
-      eureka-service
+      eureka-server
 
   profiles:
-    activate: dev, local
+    active: dev, local
 
 server:
   port:
