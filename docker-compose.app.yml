@@ -2,9 +2,5 @@ services:
   eureka-app:
     image: ${DOCKER_USERNAME}/socketing:eureka-server
     container_name: eureka-server-app
-    build:
-        context: .
-        dockerfile: Dockerfile
     ports:
       - 8671:8671
-    restart: always
