@@ -4,3 +4,5 @@ services:
     container_name: eureka-server-app
     ports:
       - 8671:8671
+    volumes:
+      - ./logs:/app/logs
