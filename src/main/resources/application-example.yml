@@ -1,0 +1,36 @@
+spring:
+  application:
+    name:
+      eureka-service
+
+  profiles:
+    activate: dev, local
+
+server:
+  port:
+    8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+logging:
+  config: classpath:logback-spring.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus
+  endpoint:
+    prometheus:
+      enabled: true
+
+user:
+  username:
+    username
+  password:
+    password
+  role:
+    role
