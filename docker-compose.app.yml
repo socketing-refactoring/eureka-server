@@ -3,6 +3,6 @@ services:
     image: ${DOCKER_USERNAME}/socketing:eureka-server
     container_name: eureka-server-app
     ports:
-      - 8671:8671
+      - 8761:8761
     volumes:
       - ./logs:/app/logs
