@@ -46,8 +46,8 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v6
         with:
-          context: .
-          file: ./Dockerfile
+          context: /home/runner/work/eureka-server/eureka-server
+          file: /home/runner/work/eureka-server/eureka-server/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/socketing:eureka-server
 
