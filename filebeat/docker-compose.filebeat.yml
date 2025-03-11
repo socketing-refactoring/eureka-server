@@ -4,7 +4,7 @@ services:
     container_name: filebeat-container
     command:
       - --strict.perms=false
-    environments:
+    environment:
       - LOGSTASH_HOST=${LOGSTASH_HOST}
     volumes:
       - /home/ubuntu/eureka-server/app/logs:/var/log/app/logs

@@ -21,3 +21,7 @@ filebeat.inputs:
 
 output.logstash:
   hosts: ["${LOGSTASH_HOST}:5044"]
+
+filebeat.config.modules:
+  path: /etc/filebeat/modules.d/*.yml
+  reload.enabled: false
