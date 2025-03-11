@@ -27,10 +27,10 @@ management:
     prometheus:
       enabled: true
 
-user:
-  username:
-    username
-  password:
-    password
-  role:
-    role
+#user:
+#  username:
+#    username
+#  password:
+#    password
+#  role:
+#    role
